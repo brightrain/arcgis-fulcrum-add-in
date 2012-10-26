@@ -190,12 +190,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\brsbanner.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\brsbanner_narrow.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\brsSuns2.png" />
   </ItemGroup>
   <PropertyGroup>
