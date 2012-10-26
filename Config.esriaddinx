@@ -1,0 +1,29 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Fulcrum</Name>
+  <AddInID>{37066741-ee1c-4c33-9464-b073c70ea320}</AddInID>
+  <Description>An integration tool to import data from the Fulcrum mobile data collections system (http://fulcrumapp.com/)</Description>
+  <Version>1.0</Version>
+  <Image>Images\fulcrum.png</Image>
+  <Author>David Puckett</Author>
+  <Company>Bright Rain Solutions</Company>
+  <Date>9/25/2012</Date>
+  <Targets>
+    <Target name="Desktop" version="10.0" />
+  </Targets>
+  <AddIn language="CLR" library="fulcrum.dll" namespace="fulcrum">
+    <ArcMap>
+      <Commands>
+        <Button id="fulcrum_FulcrumSettings" class="FulcrumSettings" message="Configure Fulcrum integration tool" caption="Fulcrum Settings" tip="Configure Fulcrum" category="FulcrumControl" image="Images\FulcrumSettings.png" />
+        <Button id="fulcrum_FulcrumTools" class="FulcrumTools" message="Import data from the Fulcrum mobile data collection system" caption="Fulcrum Import" tip="Import Fulcrum Data" category="FulcrumControl" image="Images\fulcrum-icon.png" />
+      </Commands>
+      <Toolbars>
+        <Toolbar id="fulcrum_Fulcrum_Tools" caption="Fulcrum" showInitially="true">
+          <Items>
+            <Button refID="fulcrum_FulcrumTools" />
+            <Button refID="fulcrum_FulcrumSettings" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>

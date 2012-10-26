@@ -1,0 +1,21 @@
+﻿<Window x:Class="fulcrum.fulcrumSettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Fulcrum Settings" Height="296" Width="362" FontFamily="Microsoft Sans Serif" Icon="/fulcrum;component/Images/fulcrum-window-icon.png" ResizeMode="NoResize" ShowInTaskbar="False" WindowStyle="ToolWindow" Topmost="True">
+    <Grid Height="271" Width="345">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="210*" />
+            <ColumnDefinition Width="135*" />
+        </Grid.ColumnDefinitions>
+        <Image Height="30" HorizontalAlignment="Left" Margin="12,8,0,0" Name="fulcrumLogo" Stretch="Fill" VerticalAlignment="Top" Width="80" Source="/fulcrum;component/Images/fulcrum.png" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,72,0,0" Name="textboxAPIKey" VerticalAlignment="Top" Width="320" Grid.ColumnSpan="2" FontSize="9" />
+        <Label Content="API Key:" Height="28" HorizontalAlignment="Left" Margin="12,51,0,0" Name="label1" VerticalAlignment="Top" Width="130" />
+        <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="83,217,0,0" Name="buttonSave" VerticalAlignment="Top" Width="40" Click="buttonSave_Click" Grid.Column="1" />
+        <Label Content="Geodatabase Location:" Height="28" Margin="12,101,60,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,123,0,0" Name="textboxGDBLocation" VerticalAlignment="Top" Width="283" IsEnabled="False" Grid.ColumnSpan="2" />
+        <Button Content="..." Height="23" HorizontalAlignment="Left" Margin="91,123,0,0" Name="buttonBrowse" VerticalAlignment="Top" Width="32" Click="buttonBrowse_Click" Grid.Column="1" />
+        <TextBox Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" IsEnabled="False" Margin="12,184,0,0" Name="textboxPhotoLocation" VerticalAlignment="Top" Width="283" />
+        <Button Content="..." Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="91,184,0,0" Name="buttonBrowseToPhotoFolder" VerticalAlignment="Top" Width="32" Click="buttonBrowseToPhotoFolder_Click" />
+        <Label Content="Store photos here:" Height="28" Margin="12,163,60,0" Name="label2" VerticalAlignment="Top" />
+    </Grid>
+</Window>
