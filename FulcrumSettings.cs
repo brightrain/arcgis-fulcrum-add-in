@@ -15,6 +15,7 @@ namespace fulcrum
         {
             fulcrumSettingsWindow settingsWindow = new fulcrumSettingsWindow();
             settingsWindow.ShowDialog();
+            settingsWindow = null;
         }
         protected override void OnUpdate()
         {
