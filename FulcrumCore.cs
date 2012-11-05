@@ -229,10 +229,11 @@ namespace fulcrum
                                                 Image img = GetFulcrumImage(thumbUrl);
                                                 record.photos.Add(img);
                                                 string pathToPhoto = Properties.Settings.Default.pathToPhotoFolder + "\\" + photoId + ".jpg";
-                                                string linkToThumb = "http://web.fulcrumapp.com/photos/" + photoId + "/thumbnail";
-                                                string linkToPhoto = " http://web.fulcrumapp.com/photos/" + photoId;
+                                                //string linkToThumb = "http://web.fulcrumapp.com/photos/" + photoId + "/thumbnail";
+                                                //string linkToPhoto = " http://web.fulcrumapp.com/photos/" + photoId;
                                                 img.Save(pathToPhoto, System.Drawing.Imaging.ImageFormat.Jpeg);
-                                                record.photolinks.Add(linkToPhoto);
+                                                //record.photolinks.Add(linkToPhoto);
+                                                record.photolinks.Add(pathToPhoto);
                                             }
                                             else
                                             {
